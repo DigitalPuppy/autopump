@@ -38,7 +38,9 @@ Bill of materials
 - Small electronically controlled air valve, 12V, preferably normally open.
 - Air tubing and a T connector.
 - Jumper wires, male-male and male-female
+- A push button
 - A longer two-wires cable for the control button.
+- (maybe) 1mF+ capacitor
 
 You can find all this on many hobby electronics website, for instance robot-maker.com. Note that the 5V electronic valve from this site won't work, as it leaks under too much pressure.
 
@@ -51,3 +53,8 @@ Wiring
 - Pump goes to voltage regulator out through relay 1
 - Valve goes to Vin/GND through relay 2
 - Relay control 1/2 goes to PINs 2/3.
+
+If the arduino reboots when the solenoid valve triggers, add a 1mF+ capacitor
+somewhere near it.
+
+![Wiring](medias/wiring.png?raw=true "Wiring")
